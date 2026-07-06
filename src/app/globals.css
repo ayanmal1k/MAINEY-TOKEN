@@ -6,8 +6,8 @@
   --font-kiro: var(--font-kiro-local), sans-serif;
   --font-jakobenz: var(--font-jakobenz-local), sans-serif;
 
-  --color-background: #061109; /* Deep Forest Dark Green-Black */
-  --color-foreground: #FEF3C7; /* Soft Amber/Cream */
+  --color-background: #0d2012; /* Deep Forest Dark Green-Black, slightly lighter */
+  --color-foreground: #dcab62; /* Updated Light Skin Color #dcab62 */
   --color-brand-green: #14532D; /* Rich Forest Green */
   --color-brand-lightgreen: #22C55E; /* Bright Leaf Green */
   --color-brand-gold: #D4AF37; /* Gold Accent */
@@ -39,7 +39,7 @@
 
   ::selection {
     background-color: var(--color-brand-green);
-    color: #FEF3C7;
+    color: #dcab62;
   }
 
   /* Custom Scrollbar for premium feel */
