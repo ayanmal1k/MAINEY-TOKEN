@@ -2,12 +2,15 @@
 
 import { motion } from "framer-motion";
 
+import AboutSection from "@/components/AboutSection";
+
 // Standard bouncy spring configuration
 const springConfig = { type: "spring" as const, stiffness: 120, damping: 14, mass: 0.8 };
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-background">
+    <main className="relative w-full overflow-hidden bg-background">
+      <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* 1. Full-bleed background image with dark green ambient overlay */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <img 
@@ -249,6 +252,10 @@ export default function Home() {
         </motion.div>
 
       </div>
+      </section>
+
+      {/* About Section */}
+      <AboutSection />
     </main>
   );
 }
