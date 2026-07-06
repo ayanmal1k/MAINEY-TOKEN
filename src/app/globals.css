@@ -1,1 +1,124 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-sora), system-ui, -apple-system, sans-serif;
+
+  --color-background: #0A0A0C;
+  --color-foreground: #F3F4F6;
+  --color-brand-orange: #FA5D29;
+  --color-brand-blue: #49B3FC;
+  --color-card-bg: #111113;
+  --color-card-border: #1F1F23;
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: auto; /* Required for Lenis smooth scrolling */
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-orange);
+    color: #FFFFFF;
+  }
+
+  /* Custom Scrollbar for premium feel */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1F1F24;
+    border-radius: 4px;
+    border: 2px solid var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-brand-orange);
+  }
+}
+
+/* Lenis CSS integration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis-target {
+  scroll-behavior: contain;
+}
+
+.smooth-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Ambient glow background decoration */
+.glow-spot {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Smooth custom cursor styles */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-brand-orange);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.custom-cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-brand-orange);
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease-out, border-color 0.3s;
+}
+
+.cursor-hover .custom-cursor {
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-brand-blue);
+  mix-blend-mode: difference;
+}
+
+.cursor-hover .custom-cursor-follower {
+  width: 60px;
+  height: 60px;
+  border-color: var(--color-brand-blue);
+}
