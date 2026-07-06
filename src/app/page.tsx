@@ -9,6 +9,7 @@ import HowToBuySection from "@/components/HowToBuySection";
 import CommunitySection from "@/components/CommunitySection";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import LoadingScreen from "@/components/LoadingScreen";
 
 // Standard bouncy spring configuration
 const springConfig = { type: "spring" as const, stiffness: 120, damping: 14, mass: 0.8 };
@@ -16,6 +17,9 @@ const springConfig = { type: "spring" as const, stiffness: 120, damping: 14, mas
 export default function Home() {
   return (
     <main className="relative w-full overflow-hidden bg-background">
+      {/* Loading Screen — unmounts after ~2.45 s */}
+      <LoadingScreen />
+
       {/* Navbar */}
       <Navbar />
 
