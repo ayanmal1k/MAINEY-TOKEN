@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         {/* 2. Content Layout Container */}
-        <div className="relative z-20 container mx-auto px-6 py-12 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-screen">
+        <div className="relative z-20 container mx-auto px-6 py-8 md:py-24 md:pt-28 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-screen">
 
           {/* Left Side: Brand Text & Token CTA Actions */}
           <div className="lg:col-span-5 flex flex-col items-center justify-center text-center lg:pr-6 z-10">
@@ -84,7 +84,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="text-[#dcab62] font-kiro font-black text-xs md:text-sm tracking-widest uppercase mb-10 max-w-xl filter drop-shadow-[0_3px_5px_rgba(0,0,0,0.8)]"
+              className="text-[#dcab62] font-jakobenz font-black text-sm md:text-base lg:text-lg tracking-[0.2em] uppercase mb-10 max-w-xl filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] [text-shadow:0_0_20px_rgba(212,175,55,0.3)]"
             >
               THE MOST CHILL CAPYBARA ON SOLANA
             </motion.p>
