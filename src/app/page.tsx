@@ -97,26 +97,32 @@ export default function Home() {
               className="flex flex-row flex-nowrap gap-3 md:gap-4 justify-center w-full max-w-full px-2"
             >
               {/* BUY $MAIN Button */}
-              <motion.button
+              <motion.a
+                href="https://raydium.io"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.04, boxShadow: "0 0 25px rgba(50, 98, 43, 0.6)" }}
                 whileTap={{ scale: 0.98 }}
-                className="relative overflow-hidden px-5 md:px-10 py-4 rounded-none bg-gradient-to-b from-[#34622b] via-[#284b21] to-[#1c3617] border border-[#d4af37]/80 hover:border-[#ffd700] text-[#dcab62] font-kiro font-black text-sm md:text-lg tracking-widest uppercase flex items-center justify-center cursor-pointer shadow-[0_6px_20px_rgba(40,75,33,0.5)] transition-all duration-300 w-[48%] md:w-auto whitespace-nowrap group"
+                className="relative overflow-hidden px-5 md:px-10 py-4 rounded-none bg-gradient-to-b from-[#34622b] via-[#284b21] to-[#1c3617] border border-[#d4af37]/80 hover:border-[#ffd700] text-[#dcab62] font-kiro font-black text-sm md:text-lg tracking-widest uppercase flex items-center justify-center cursor-pointer shadow-[0_6px_20px_rgba(40,75,33,0.5)] transition-all duration-300 w-[48%] md:w-auto whitespace-nowrap group text-center"
               >
                 {/* Glossy light sweep sheen on hover */}
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
                 <span className="relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">BUY $MAIN</span>
-              </motion.button>
+              </motion.a>
 
               {/* JOIN COMMUNITY Button */}
-              <motion.button
+              <motion.a
+                href="https://t.me/+VCIatTbYnQthYjdk"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.04, boxShadow: "0 0 25px rgba(220, 171, 98, 0.15)" }}
                 whileTap={{ scale: 0.98 }}
-                className="relative overflow-hidden px-5 md:px-10 py-4 rounded-none bg-gradient-to-b from-[#121c15]/90 via-[#0a110b]/95 to-[#030604]/98 border border-[#dcab62]/30 hover:border-[#dcab62]/85 text-[#dcab62] font-kiro font-black text-sm md:text-lg tracking-widest uppercase flex items-center justify-center cursor-pointer transition-all duration-300 w-[48%] md:w-auto whitespace-nowrap group"
+                className="relative overflow-hidden px-5 md:px-10 py-4 rounded-none bg-gradient-to-b from-[#121c15]/90 via-[#0a110b]/95 to-[#030604]/98 border border-[#dcab62]/30 hover:border-[#dcab62]/85 text-[#dcab62] font-kiro font-black text-sm md:text-lg tracking-widest uppercase flex items-center justify-center cursor-pointer transition-all duration-300 w-[48%] md:w-auto whitespace-nowrap group text-center"
               >
                 {/* Subtle green sheen on hover */}
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-[#22C55E]/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
                 <span className="relative z-10">JOIN COMMUNITY</span>
-              </motion.button>
+              </motion.a>
             </motion.div>
           </div>
 

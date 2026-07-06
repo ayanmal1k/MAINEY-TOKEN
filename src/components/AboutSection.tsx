@@ -7,7 +7,7 @@ const springConfig = { type: "spring" as const, stiffness: 100, damping: 15, mas
 
 export default function AboutSection() {
   const sectionRef = useRef<HTMLElement>(null);
-  const buttonRef = useRef<HTMLButtonElement>(null);
+  const buttonRef = useRef<HTMLAnchorElement>(null);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   // Check for reduced motion
@@ -39,7 +39,7 @@ export default function AboutSection() {
   const buttonSpringX = useSpring(mouseX, { stiffness: 200, damping: 15, mass: 0.6 });
   const buttonSpringY = useSpring(mouseY, { stiffness: 200, damping: 15, mass: 0.6 });
 
-  const handleMagneticMove = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleMagneticMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (prefersReducedMotion || !buttonRef.current) return;
     const rect = buttonRef.current.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
@@ -165,7 +165,10 @@ export default function AboutSection() {
               transition={{ ...springConfig, delay: 0.4 }}
               className="w-full sm:w-auto"
             >
-              <motion.button
+              <motion.a
+                href="https://t.me/+VCIatTbYnQthYjdk"
+                target="_blank"
+                rel="noopener noreferrer"
                 ref={buttonRef}
                 onMouseMove={handleMagneticMove}
                 onMouseLeave={handleMagneticLeave}
@@ -177,12 +180,12 @@ export default function AboutSection() {
                   backgroundColor: "rgba(212, 175, 55, 0.15)"
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="relative overflow-hidden px-12 py-5 rounded-none border border-brand-gold bg-black/45 text-brand-gold hover:text-[#dcab62] font-kiro font-black text-sm md:text-lg tracking-widest uppercase flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
+                className="relative overflow-hidden px-12 py-5 rounded-none border border-brand-gold bg-black/45 text-brand-gold hover:text-[#dcab62] font-kiro font-black text-sm md:text-lg tracking-widest uppercase flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold text-center"
               >
                 {/* Gold sheen light sweep */}
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-[#ffd700]/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
                 <span className="relative z-10">JOIN THE MOVEMENT</span>
-              </motion.button>
+              </motion.a>
             </motion.div>
           </div>
 
