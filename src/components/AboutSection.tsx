@@ -166,7 +166,7 @@ export default function AboutSection() {
               className="w-full sm:w-auto"
             >
               <motion.a
-                href="https://t.me/+VCIatTbYnQthYjdk"
+                href="https://t.me/+4hVEk4VxztgzNGQ0"
                 target="_blank"
                 rel="noopener noreferrer"
                 ref={buttonRef}

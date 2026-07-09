@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://t.me/+VCIatTbYnQthYjdk"><img src="https://img.shields.io/badge/Telegram-Join%20Community-blue?logo=telegram&style=for-the-badge" alt="Telegram"/></a>
+  <a href="https://t.me/+4hVEk4VxztgzNGQ0"><img src="https://img.shields.io/badge/Telegram-Join%20Community-blue?logo=telegram&style=for-the-badge" alt="Telegram"/></a>
   <a href="https://x.com/MAINEYTHECAPY"><img src="https://img.shields.io/badge/X%20%2F%20Twitter-Follow%20Us-black?logo=x&style=for-the-badge" alt="X / Twitter"/></a>
   <a href="https://github.com/ayanmal1k/MAINEY-TOKEN"><img src="https://img.shields.io/badge/GitHub-Repository-green?logo=github&style=for-the-badge" alt="GitHub"/></a>
 </p>
@@ -100,7 +100,7 @@ npm start
 
 ## 🤝 Community & Links
 
-- **Telegram**: [Join the Community Group](https://t.me/+VCIatTbYnQthYjdk)
+- **Telegram**: [Join the Community Group](https://t.me/+4hVEk4VxztgzNGQ0)
 - **X (Twitter)**: [Follow @MAINEYTHECAPY](https://x.com/MAINEYTHECAPY)
 - **Raydium**: [Buy $MAIN on Raydium](https://raydium.io)
 - **GitHub**: [MAINEY Repository](https://github.com/ayanmal1k/MAINEY-TOKEN)

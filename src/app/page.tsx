@@ -116,7 +116,7 @@ export default function Home() {
 
               {/* JOIN COMMUNITY Button */}
               <motion.a
-                href="https://t.me/+VCIatTbYnQthYjdk"
+                href="https://t.me/+4hVEk4VxztgzNGQ0"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.04, boxShadow: "0 0 25px rgba(220, 171, 98, 0.15)" }}

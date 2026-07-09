@@ -23,11 +23,11 @@ export default function Footer() {
 
     gsap.fromTo(cols,
       { opacity: 0, y: 20 },
-      { 
-        opacity: 1, 
-        y: 0, 
-        duration: 0.6, 
-        stagger: 0.12, 
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        stagger: 0.12,
         ease: "power2.out",
         scrollTrigger: scrollTriggerConfig
       }
@@ -35,7 +35,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer 
+    <footer
       ref={footerRef}
       className="relative w-full py-10 md:py-14 bg-[#0a180f] border-t border-[#D4AF37]/20 overflow-hidden"
       aria-label="MAINEY Footer"
@@ -48,13 +48,13 @@ export default function Footer() {
       {/* Grid Container */}
       <div className="relative z-10 container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-center justify-between">
-          
+
           {/* Left Column: Name Text Logo */}
           <div className="footer-col flex flex-col items-center md:items-start text-center md:text-left select-none pointer-events-none">
-            <img 
-              src="/name-text.png" 
-              alt="MAINEY" 
-              className="w-full max-w-[160px] sm:max-w-[200px] md:max-w-[240px] h-auto object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.65)]" 
+            <img
+              src="/name-text.png"
+              alt="MAINEY"
+              className="w-full max-w-[160px] sm:max-w-[200px] md:max-w-[240px] h-auto object-contain drop-shadow-[0_4px_8px_rgba(0,0,0,0.65)]"
             />
           </div>
 
@@ -62,7 +62,7 @@ export default function Footer() {
           <div className="footer-col flex flex-row gap-5 items-center justify-center">
             {/* Telegram Icon Link */}
             <motion.a
-              href="https://t.me/+VCIatTbYnQthYjdk"
+              href="https://t.me/+4hVEk4VxztgzNGQ0"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.15, rotate: 6, borderColor: "#ffd700", color: "#ffd700" }}

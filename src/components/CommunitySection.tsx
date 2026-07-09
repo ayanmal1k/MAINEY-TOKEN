@@ -82,7 +82,7 @@ export default function CommunitySection() {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     setPrefersReducedMotion(mediaQuery.matches);
-    
+
     const listener = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
     mediaQuery.addEventListener("change", listener);
     return () => mediaQuery.removeEventListener("change", listener);
@@ -165,9 +165,9 @@ export default function CommunitySection() {
       {/* Content Container (Aligned to the bottom using items-end) */}
       <div className="relative z-10 container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-end">
-          
+
           {/* Left Column: Title and social links (aligned to bottom but with padding for spacing) */}
-          <div 
+          <div
             ref={leftContentRef}
             className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left pb-16 md:pb-24"
           >
@@ -183,8 +183,8 @@ export default function CommunitySection() {
             {/* Social Buttons Wrapper */}
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start w-full">
               {/* Telegram Button */}
-              <NotchedButton 
-                href="https://t.me/+VCIatTbYnQthYjdk" 
+              <NotchedButton
+                href="https://t.me/+4hVEk4VxztgzNGQ0"
                 icon={
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.24-5.54 3.65-.52.36-.97.53-1.34.52-.41-.01-1.21-.23-1.8-.42-.72-.24-1.3-.37-1.25-.79.03-.22.33-.44.9-.67 3.52-1.53 5.87-2.54 7.05-3.03 3.35-1.39 4.05-1.63 4.51-1.64.1 0 .33.02.48.15.12.1.16.24.18.34.02.1.03.22.01.32z" />
@@ -195,8 +195,8 @@ export default function CommunitySection() {
               </NotchedButton>
 
               {/* Follow on X Button */}
-              <NotchedButton 
-                href="https://x.com/MAINEYTHECAPY" 
+              <NotchedButton
+                href="https://x.com/MAINEYTHECAPY"
                 icon={
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-4.5 h-4.5">
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -209,14 +209,14 @@ export default function CommunitySection() {
           </div>
 
           {/* Right Column: Large Logo Badge (Sitting exactly at the bottom) */}
-          <div 
+          <div
             ref={rightBadgeRef}
             className="lg:col-span-6 flex justify-center lg:justify-end items-end h-full mt-auto"
           >
             <motion.div
-              whileHover={prefersReducedMotion ? {} : { 
-                scale: 1.03, 
-                filter: "drop-shadow(0 15px 30px rgba(212, 175, 55, 0.35))" 
+              whileHover={prefersReducedMotion ? {} : {
+                scale: 1.03,
+                filter: "drop-shadow(0 15px 30px rgba(212, 175, 55, 0.35))"
               }}
               transition={{ type: "spring", stiffness: 120, damping: 12 }}
               className="w-full max-w-[420px] sm:max-w-[540px] lg:max-w-[700px] flex items-end justify-center"
