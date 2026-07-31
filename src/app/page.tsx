@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 
 import AboutSection from "@/components/AboutSection";
+import ContractSection from "@/components/ContractSection";
 import TokenomicsSection from "@/components/TokenomicsSection";
 import RoadmapSection from "@/components/RoadmapSection";
 import HowToBuySection from "@/components/HowToBuySection";
@@ -102,7 +103,7 @@ export default function Home() {
             >
               {/* BUY $MAIN Button */}
               <motion.a
-                href="https://raydium.io"
+                href="https://pump.fun/coin/5YcoReZULnQht691zUmXLB1j6sYmWs5jTmKz3Vqypump"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.04, boxShadow: "0 0 25px rgba(50, 98, 43, 0.6)" }}
@@ -272,6 +273,9 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* Contract Address Section */}
+      <ContractSection />
 
       {/* About Section */}
       <AboutSection />
