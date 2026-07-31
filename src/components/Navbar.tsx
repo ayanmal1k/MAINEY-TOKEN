@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Right: BUY $MAIN button (always visible) + hamburger on mobile */}
           <div className="flex items-center gap-3">
             <motion.a
-              href="https://raydium.io"
+              href="https://pump.fun/coin/5YcoReZULnQht691zUmXLB1j6sYmWs5jTmKz3Vqypump"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, boxShadow: "0 0 22px rgba(50, 98, 43, 0.65)" }}
